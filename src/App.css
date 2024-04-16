@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'GT America';
+    src: url(./fonts/GT-America/GT-America-Standard-Regular.ttf);
+}
+
+:root {
+    --black: #1f1f1f;
+    --white: #ffffff;
+    --spacing-01: 0.125rem;
+    --spacing-02: 0.25rem;
+    --spacing-03: 0.5rem;
+    --spacing-04: 0.75rem;
+    --spacing-05: 1rem;
+    --spacing-06: 1.5rem;
+    --spacing-07: 2rem;
+    --spacing-08: 2.5rem;
+    --spacing-09: 3rem;
+    --spacing-10: 4rem;
+    --spacing-11: 5rem;
+    --spacing-12: 6rem;
+    --spacing-13: 10rem;
+}
+
+* {
+    font-family: 'GT America', Arial, Helvetica, sans-serif;
+}
+
+html,
+:root {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'GT America', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    overflow-x: hidden;
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight: 200;
+    line-height: 1.4;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+    margin-top: var(--spacing-09);
+    margin-bottom: var(--spacing-05);
+}
+h3 {
+    font-size: 2.5rem;
+    margin-top: var(--spacing-06);
+    margin-bottom: var(--spacing-05);
+}
+h4 {
+    font-size: 1.5rem;
+    margin-top: var(--spacing-06);
+    margin-bottom: var(--spacing-05);
+}
+
+@media only screen and (max-width: 850px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+}

@@ -5,7 +5,9 @@
 
 :root {
     --black: #1f1f1f;
+    --natt: #1f1f1f;
     --white: #ffffff;
+    --ild-lys: #f0eae2;
     --spacing-01: 0.125rem;
     --spacing-02: 0.25rem;
     --spacing-03: 0.5rem;
@@ -27,8 +29,8 @@
 
 html,
 :root {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--ild-lys);
+    color: var(--natt);
     font-family: 'GT America', Arial, Helvetica, sans-serif;
     font-size: 22px;
     overflow-x: hidden;

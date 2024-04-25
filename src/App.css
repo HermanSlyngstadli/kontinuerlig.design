@@ -44,44 +44,14 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    font-weight: 200;
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+    font-family: 'GT America', Arial, Helvetica, sans-serif;
     line-height: 1.4;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
+    font-feature-settings: 'ss01' on, 'ss05' on;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-    font-size: 4rem;
-}
-h2 {
-    font-size: 3rem;
-    margin-top: var(--spacing-09);
-    margin-bottom: var(--spacing-05);
-}
-h3 {
-    font-size: 2.5rem;
-    margin-top: var(--spacing-06);
-    margin-bottom: var(--spacing-05);
-}
-h4 {
-    font-size: 1.5rem;
-    margin-top: var(--spacing-06);
-    margin-bottom: var(--spacing-05);
-}
-
-@media only screen and (max-width: 850px) {
-    h1 {
-        font-size: 3em;
-    }
-    h2 {
-        font-size: 2.3em;
-    }
-    h3 {
-        font-size: 1.8em;
-    }
+a {
+    color: var(--natt);
 }

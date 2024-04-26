@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
+import InsightArticles from '../../components/InsightArticles'
 
 const HeroSection = styled.div`
-    height: 100vh;
+    height: 50vh;
     width: 100%;
 `
 
@@ -46,6 +47,7 @@ export const LandingPage = ({ children }) => {
                         vårt akkurat nå, de er superviktige. Så viktige at vi må sørge for å holde følge.
                     </p>
                 </HeroSection>
+                <InsightArticles />
             </MainSection>
             <Footer />
         </>

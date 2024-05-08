@@ -2,10 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
+import InsightArticles from '../../components/InsightArticles'
 
 const HeroSection = styled.div`
-    height: 100vh;
-    width: 100%;
+    height: 50vh;
+    width: 60%;
+    margin-bottom: 10vh;
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
 `
 
 const MainSection = styled.main`
@@ -42,10 +47,11 @@ export const LandingPage = ({ children }) => {
                         Vi må <TitleUnderline>snakke</TitleUnderline> om designfaget
                     </h1>
                     <p>
-                        Faget vårt er i endring. Kontinuerlig. Og de endringene vi ser i verden, i bransjen og i faget
-                        vårt akkurat nå, de er superviktige. Så viktige at vi må sørge for å holde følge.
+                        Faget vårt er i endring. Kontinuerlig. Og de endringene vi ser i verden, i teknologibransjen og
+                        i faget vårt akkurat nå, de er superviktige. Akkurat nå er det innsiktsarbeid som brenner.
                     </p>
                 </HeroSection>
+                <InsightArticles />
             </MainSection>
             <Footer />
         </>

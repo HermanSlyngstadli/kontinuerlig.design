@@ -60,7 +60,7 @@ const Navigation = () => {
             </Nav>
             <Menu open={menuOpen}>
                 <NavItem href="/">Hva er kontinuerlig design?</NavItem>
-                <NavItem href="/hva-er-kontinuerlig-design">Testside</NavItem>
+                <NavItem href="/undersokelsen">Undersøkelsen</NavItem>
             </Menu>
         </div>
     )

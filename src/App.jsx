@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { LandingPage } from './pages/LandingPage/LandingPage'
-import { WhatIsIt } from './pages/WhatIsIt/WhatIsIt'
+import { Questioneer } from './pages/Questioneer/Questioneer'
 
 function App() {
     const router = createBrowserRouter([
@@ -11,8 +11,8 @@ function App() {
             element: <LandingPage />,
         },
         {
-            path: '/hva-er-kontinuerlig-design',
-            element: <WhatIsIt />,
+            path: '/undersokelsen',
+            element: <Questioneer />,
         },
     ])
     return (

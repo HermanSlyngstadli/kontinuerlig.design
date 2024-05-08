@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
 import InsightArticles from '../../components/InsightArticles'
 import Survey from '../../components/Survey'
-import Animation from '../../components/Animation'
+// import Animation from '../../components/Animation'
 
 const HeroSection = styled.div`
     height: 50vh;
@@ -52,7 +52,7 @@ export const LandingPage = ({ children }) => {
                         i faget vårt akkurat nå, de er superviktige. Akkurat nå er det innsiktsarbeid som brenner.
                     </p>
                 </HeroSection>
-                <Animation />
+                {/* <Animation /> */}
                 <Survey />
                 <InsightArticles />
             </MainSection>

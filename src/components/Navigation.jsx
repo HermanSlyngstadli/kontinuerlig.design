@@ -22,7 +22,8 @@ const Menu = styled.div`
     right: 0;
     width: 100%;
     min-height: 100%;
-    background-color: var(--natt);
+    background-color: ${(props) => (props.open ? 'var(--natt)' : 'var(--white)')};
+    transition: background-color 0.3s ease-in-out;
     padding: 10rem 20px 20rem;
     z-index: 2;
     overscroll-behavior: contain;

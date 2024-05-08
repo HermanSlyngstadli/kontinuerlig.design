@@ -55,4 +55,7 @@ h6 {
 
 a {
     color: var(--natt);
+    &&:hover {
+        text-decoration: none;
+    }
 }

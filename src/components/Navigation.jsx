@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import logo from '../images/BekkLogo.svg'
+import NavItem from './NavItem'
+import Logo from './Logo'
 
 const Nav = styled.nav`
     display: flex;
@@ -14,16 +15,31 @@ const Nav = styled.nav`
 const Menu = styled.div`
     display: ${(props) => (props.open ? 'flex' : 'none')};
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    color: #000;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: ${(props) => (props.open ? 'var(--natt)' : 'var(--white)')};
+    transition: background-color 0.3s ease-in-out;
     padding: 10rem 20px 20rem;
     z-index: 2;
+    overscroll-behavior: contain;
+    overflow: auto;
+`
+
+const MenuButton = styled.button`
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: ${(props) => (props.open ? 'var(--white)' : 'var(--natt)')};
+    transition: color 0.3s ease-in-out;
 `
 
 const Navigation = () => {
@@ -36,15 +52,15 @@ const Navigation = () => {
         <div>
             <Nav>
                 <a href="/">
-                    <img className="bekkLogo" src={logo} width="56" height="51.95" />
+                    <Logo color={menuOpen ? 'var(--white)' : 'var(--natt)'} width="56" height="51.95" />
                 </a>
-                <button style={{ fontSize: '0.75rem' }} onClick={() => toggleMenu()}>
+                <MenuButton open={menuOpen} onClick={() => toggleMenu()}>
                     Meny
-                </button>
+                </MenuButton>
             </Nav>
             <Menu open={menuOpen}>
-                <a href="/">Hjem</a>
-                <a href="/hva-er-kontinuerlig-design">Hva er kontinuerlig design</a>
+                <NavItem href="/">Hva er kontinuerlig design?</NavItem>
+                <NavItem href="/undersokelsen">Undersøkelsen</NavItem>
             </Menu>
         </div>
     )

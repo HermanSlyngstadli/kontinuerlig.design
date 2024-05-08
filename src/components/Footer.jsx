@@ -40,10 +40,10 @@ const Footer = () => {
             </FooterContent>
             <FooterContent>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0rem' }}>Mer fra oss</h3>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Blogg</a>
-                <a href="#">Podcast</a>
+                <a href="https://www.instagram.com/livetibekk">Instagram</a>
+                <a href="https://www.linkedin.com/company/bekk/">LinkedIn</a>
+                <a href="https://blogg.bekk.no/">Blogg</a>
+                <a href="https://open.spotify.com/show/6SVNY97zuPWcVdvE2FSNRL">Podkast</a>
             </FooterContent>
         </FooterWrapper>
     )

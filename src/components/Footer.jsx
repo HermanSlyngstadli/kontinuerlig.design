@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import logo from '../images/BekkLogo.svg'
 
 const FooterWrapper = styled.footer`
+    margin-top: 20vh;
     display: flex;
     justify-content: end;
     align-items: flex-start;

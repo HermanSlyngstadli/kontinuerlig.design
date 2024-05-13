@@ -11,6 +11,7 @@ const HeroSection = styled.div`
     width: 60%;
     @media screen and (max-width: 500px) {
         width: 90%;
+        height: 30vh;
     }
 `
 
@@ -25,16 +26,22 @@ const MainSection = styled.main`
 
 const TitleUnderline = styled.span`
     position: relative;
+    margin-top: 0;
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+    line-height: 1.4;
+    font-feature-settings: 'ss01' on, 'ss05' on;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 
     /* Underline */
     &::after {
         content: '';
         position: absolute;
-        bottom: -2px;
+        bottom: -4px;
         left: 0;
         width: 100%;
-        height: 0.15em;
-        background-color: #d4ff26;
+        height: 0.25em;
+        background-color: var(--rebell);
     }
 `
 

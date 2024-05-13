@@ -28,6 +28,11 @@
 
 * {
     font-family: 'GT America', Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    line-height: 1.4;
+    font-feature-settings: 'ss01' on, 'ss05' on;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -35,7 +40,6 @@ html,
     background-color: var(--ild-lys);
     color: var(--natt);
     font-family: 'GT America', Arial, Helvetica, sans-serif;
-    font-size: 22px;
     overflow-x: hidden;
     font-weight: 100;
 }

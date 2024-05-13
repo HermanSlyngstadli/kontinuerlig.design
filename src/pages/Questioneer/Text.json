@@ -1,6 +1,6 @@
 {
     "title": "Barrierer for innsiktsarbeid",
-    "intro": "Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi kunne ønske? Etter et dypdykk i dette spørsmålet har vi nå også hørt fra noen av dere i bransjen. Innsiktsarbeid trengs for å ta gode beslutninger om hva vi skal lage, hvorfor og hvordan, og aller helst fra både kvalitative og kvantitative data. Vi trenger også forståelse av domenet vi jobber innenfor - som bl.a. det juridiske, tekniske og hvordan organisasjonen fungerer. I denne undersøkelsen har vi snevret inn fokuset på kvalitativ og kvantitativ brukerinnsikt. Per 7. mai 2024 har 64 svart. Vi kan ikke si at dette er resultater som viser bransjen, derfor viser vi antallet svar per spørsmål - dette er bare en indikasjon på hva noen i bransjen opplever. Kort oppsummert: hverdagene våre ser ganske forskjellige ut, og naturlig nok kjenner vi også da på ulike årsaker til hvorfor vi ikke får gjennomført den brukerinnsikten vi har behov for! To tredjedeler av oss jobber i en organisasjon som forstår hvorfor vi jobber brukersentrert (hurra!), men dessverre er det hele en tredjedel som opplever at organisasjonen ikke forstår hvorfor vi trenger å snakke med brukere (sukk).",
+    "intro": "Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi kunne ønske? Etter et dypdykk i dette spørsmålet har vi nå også hørt fra noen av dere i bransjen. Innsiktsarbeid trengs for å ta gode beslutninger om hva vi skal lage, hvorfor og hvordan, og aller helst fra både kvalitative og kvantitative data. Vi trenger også forståelse av domenet vi jobber innenfor - som bl.a. det juridiske, tekniske og hvordan organisasjonen fungerer. I denne undersøkelsen har vi snevret inn fokuset på kvalitativ og kvantitativ brukerinnsikt. Per 7. mai 2024 har 64 svart.\n\n\nVi kan ikke si at dette er resultater som viser bransjen, derfor viser vi antallet svar per spørsmål - dette er bare en indikasjon på hva noen i bransjen opplever. Kort oppsummert: hverdagene våre ser ganske forskjellige ut, og naturlig nok kjenner vi også da på ulike årsaker til hvorfor vi ikke får gjennomført den brukerinnsikten vi har behov for! To tredjedeler av oss jobber i en organisasjon som forstår hvorfor vi jobber brukersentrert (hurra!), men dessverre er det hele en tredjedel som opplever at organisasjonen ikke forstår hvorfor vi trenger å snakke med brukere (sukk).",
     "findings": [
       {
         "bigTitle": "Halvparten får ikke gjort nok kvalitativ brukerinnsikt",
@@ -59,6 +59,6 @@
     {
         "title": "Hva opplever du? ",
         "link": "Ta spørreundersøkelsen her  ",
-        "content": "- den er åpen i en stund fremover."
+        "linkContent": "- den er åpen i en stund fremover."
       }
       ]}

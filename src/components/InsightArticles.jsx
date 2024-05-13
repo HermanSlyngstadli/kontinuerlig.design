@@ -32,9 +32,9 @@ const Article = styled.article`
         }
     }
 
-    grid-column: auto / span 4;
+    grid-column: auto / span 6;
     @media screen and (max-width: 900px) {
-        grid-column: auto / span 6;
+        grid-column: auto / span 12;
     }
     @media screen and (max-width: 530px) {
         grid-column: 1 / span 12;

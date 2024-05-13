@@ -28,6 +28,11 @@ const Title = styled.h1`
 `
 const TitleUnderline = styled.span`
     position: relative;
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+    line-height: 1.4;
+    font-feature-settings: 'ss01' on, 'ss05' on;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 
     /* Underline */
     &::after {
@@ -62,6 +67,9 @@ const Answers = styled.p`
     margin: 0;
     padding-left: -2vh;
     padding-bottom: 1vh;
+`
+const List = styled.li`
+    font-size: 18px;
 `
 const Quotes = styled.span`
     font-family: 'GT America Expanded';
@@ -133,7 +141,7 @@ export const Questioneer = ({ children }) => {
                         src={graf}
                         alt="Det siste halvåret - har dere gjort den kvalitative brukerinnsikten du opplever at teamet har behov for? 44 % svarer ja, 56 % svarer nei."
                     />
-                    <figcaption>
+                    <figcaption style={{ fontSize: '14px' }}>
                         44 % svarer ja, og 56 % svarer nei på om de har gjort den kvalitatitve brukerinnsikten de
                         opplever at teamet har behov for det siste halvåret.
                     </figcaption>
@@ -144,18 +152,18 @@ export const Questioneer = ({ children }) => {
                     er å få prioritert det. Folk har travle hverdager, så det er mange som ikke får tid eller orker å
                     prioritere utforskningen i hverdagen.{' '}
                     <ul>
-                        <li>
+                        <List>
                             Vi er opptatt med å bygge og lage ny funksjonalitet <br />
                             <Answers>19 svar av 37 mulige</Answers>
-                        </li>
-                        <li>
+                        </List>
+                        <List>
                             Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang{' '}
                             <Answers>19 svar av 37 mulige</Answers>
-                        </li>
-                        <li>
+                        </List>
+                        <List>
                             Forarbeidet tar (for) mye tid - som rekruttering og intervjuguide{' '}
                             <Answers>11 svar av 37 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Quotes style={{ marginBottom: '5vh' }}>“IKKE ROM I PRIO TIL Å SE FRAMOVER”</Quotes>
@@ -172,14 +180,14 @@ export const Questioneer = ({ children }) => {
                     jobber i oppdelte faser, der det kvalitative innsiktsarbeidet i hovedsak skjer før en starter
                     byggingen. Hvor er det kontinuerlige arbeidet? Bygge, måle, lære?
                     <ul>
-                        <li>
+                        <List>
                             Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere.{' '}
                             <Answers>14 svar av 37 mulige</Answers>
-                        </li>
-                        <li>
+                        </List>
+                        <List>
                             Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for
                             brukerne - brukerinnsikten er allerede hentet inn. <Answers>9 svar av 37 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Finding>
@@ -189,10 +197,10 @@ export const Questioneer = ({ children }) => {
                     Hvis vi skal tenke over hva som er det reelle problemet å løse her, så kan det se ut som det ikke er
                     å bygge kompetanse som er det viktige - det handler gjerne mer om kulturen i organisasjonen?
                     <ul>
-                        <li>
+                        <List>
                             Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det.{' '}
                             <Answers>3 svar av 37 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Finding>
@@ -201,10 +209,10 @@ export const Questioneer = ({ children }) => {
                     Da kan det virke som det varierer fra organisasjon til organisasjon om det er juridiske og
                     personvernmessige hindrer i veien for å få gjennomført for eksempel et intervju.
                     <ul>
-                        <li>
+                        <List>
                             Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data.{' '}
                             <Answers>2 svar av 37 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Finding>
@@ -222,7 +230,7 @@ export const Questioneer = ({ children }) => {
                         src={graf}
                         alt="Det siste halvåret - har dere gjort den kvantitative brukerinnsikten du opplever at teamet har behov for? 44 % svarer ja, 56 % svarer nei."
                     />
-                    <figcaption>
+                    <figcaption style={{ fontSize: '14px' }}>
                         44 % svarer ja, og 56 % svarer nei på om de har gjort den kvantitative brukerinnsikten de
                         opplever at teamet har behov for det siste halvåret.
                     </figcaption>
@@ -237,9 +245,9 @@ export const Questioneer = ({ children }) => {
                     se om det vi lager faktisk treffer på brukerbehov? Skaper den nye funksjonaliteten den effekten vi
                     forventet?
                     <ul>
-                        <li>
+                        <List>
                             Vi er opptatt med å bygge og lage ny funksjonalitet.<Answers>10 svar av 37 mulige</Answers>{' '}
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Finding>
@@ -250,10 +258,10 @@ export const Questioneer = ({ children }) => {
                     funksjonalitet. Kvantitative data kan en også få tak i fra databasen - men er det for tungvindt og
                     teknisk?
                     <ul>
-                        <li>
+                        <List>
                             Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytcs e.l.).{' '}
                             <Answers>16 svar av 37 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Finding>
@@ -269,17 +277,17 @@ export const Questioneer = ({ children }) => {
                     kompetansen, og når det i tillegg er travelt, så kan det være vanskelig å engasjere teamet til å
                     komme i gang.
                     <ul>
-                        <li>
+                        <List>
                             Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det.{' '}
                             <Answers>9 svar av 36 mulige</Answers>
-                        </li>
-                        <li>
+                        </List>
+                        <List>
                             Teamet mangler kompetansen til å sette opp målinger. <Answers>10 svar av 36 mulige</Answers>{' '}
-                        </li>
-                        <li>
+                        </List>
+                        <List>
                             Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang.{' '}
                             <Answers>10 svar av 36 mulige</Answers>
-                        </li>
+                        </List>
                     </ul>
                 </Finding>
                 <Quotes>
@@ -319,7 +327,6 @@ export const Questioneer = ({ children }) => {
         </>
     )
 }
-
 // const SurveyLink = styled.div`
 //     display: flex;
 //     align-items: center;

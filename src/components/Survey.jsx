@@ -36,8 +36,8 @@ const Survey = () => {
                 <DotHeading>Undersøkelsen</DotHeading>
                 <Title>Barrierer for innsiktsarbeid </Title>
                 <Description>
-                    69% av designere vi spurte føler ikke de gjør nok innsiktsarbeid i hverdagen. De vanligste
-                    barrierene er rekruttering, rammer og blabla.{' '}
+                    Omtrent halvparten av oss får ikke gjort den kvalitative eller kvantitative brukerinnsikten vi
+                    opplever teamet har behov for. Hvilke barrierer står i veien for det?{' '}
                 </Description>
                 <Button href={'/undersokelsen'}>SE RESULTATENE </Button>
             </SurveyContent>

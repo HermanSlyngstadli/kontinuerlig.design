@@ -292,7 +292,7 @@ export const Questioneer = ({ children }) => {
                 </Finding>
                 <Quotes>
                     {' '}
-                    “TEAMET MÅLER ALT FOR MANFE PARAMETRE OG HAR IKKE NOE BEVISST FORHOLD TIL HVORDAN Å BRUKE DATAEN DE
+                    “TEAMET MÅLER ALT FOR MANGE PARAMETRE OG HAR IKKE NOE BEVISST FORHOLD TIL HVORDAN Å BRUKE DATAEN DE
                     SAMLER INN”
                 </Quotes>
                 <Finding>

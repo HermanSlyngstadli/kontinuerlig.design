@@ -124,7 +124,7 @@ const ImageElement = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 5rem;
     gap: 16px;
     grid-column: 1 / span 3;
     font-size: 14px;
@@ -132,7 +132,6 @@ const ImageElement = styled.div`
     margin-bottom: 2rem;
     @media screen and (max-width: 1000px) {
         grid-column: 1 / span 2;
-        width: 80%;
     }
 `
 const Graf = styled.img`

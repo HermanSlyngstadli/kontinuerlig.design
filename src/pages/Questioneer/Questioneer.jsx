@@ -30,7 +30,7 @@ const Finding = styled.div`
 `
 const Title = styled.h1`
     grid-column: 1 / span 3;
-    padding-right: 20px;
+    padding-right: 5rem;
     @media screen and (max-width: 1000px) {
         grid-column: 1 / span 12;
     }

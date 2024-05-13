@@ -4,11 +4,12 @@ import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
 // import jsonData from './Text.json'
 import graf from '../../images/grafSurvey.png'
+import NavArrow from '../../components/NavArrow'
 
 const MainSection = styled.main`
     position: relative;
     margin: 0 auto;
-    padding: 174px 20px 0;
+    padding: 80px 20px 0;
     max-width: 2240px;
     width: 100%;
     box-sizing: border-box;
@@ -139,11 +140,32 @@ const Graf = styled.img`
     width: 100%;
 `
 
+const BackLink = styled.a`
+    display: block;
+    margin-bottom: 5rem;
+    width: 100%;
+    grid-column: 1 / span 6;
+
+    @media screen and (max-width: 700) {
+        margin-bottom: 2rem;
+        grid-column: 1 / span 2;
+    }
+`
+
 export const Questioneer = ({ children }) => {
     return (
         <>
             <Navigation />
             <MainSection>
+                <BackLink href="/">
+                    <NavArrow
+                        currentColor={'var(--natt)'}
+                        height="1rem"
+                        width="1.3rem"
+                        style={{ marginRight: '0.5rem', transform: 'rotate(180deg)' }}
+                    />
+                    Tilbake til forsiden
+                </BackLink>
                 <Title>
                     <TitleUnderline>Barrierer</TitleUnderline> for innsiktsarbeid
                 </Title>

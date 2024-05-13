@@ -9,8 +9,8 @@ import Animation from '../../components/Animation'
 const HeroSection = styled.div`
     height: 50vh;
     width: 60%;
-    @media screen and (max-width: 500px) {
-        width: 90%;
+    @media screen and (max-width: 700px) {
+        width: 100%;
         height: 30vh;
     }
 `

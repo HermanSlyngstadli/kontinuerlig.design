@@ -1,17 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import NavItem from './NavItem'
+//import NavItem from './NavItem'
 import Logo from './Logo'
 
 const Nav = styled.nav`
-    display: flex;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
     justify-content: space-between;
     align-items: top;
     padding: 20px 20px;
     z-index: 3;
 `
 
+/*
 const Menu = styled.div`
     display: ${(props) => (props.open ? 'flex' : 'none')};
     flex-direction: column;
@@ -29,7 +33,6 @@ const Menu = styled.div`
     overscroll-behavior: contain;
     overflow: auto;
 `
-
 const MenuButton = styled.button`
     display: flex;
     align-items: flex-start;
@@ -40,30 +43,33 @@ const MenuButton = styled.button`
     border: none;
     color: ${(props) => (props.open ? 'var(--white)' : 'var(--natt)')};
     transition: color 0.3s ease-in-out;
-`
+`*/
 
 const Navigation = () => {
+    /*
     const [menuOpen, setMenuOpen] = useState(false)
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
-    }
+    }*/
     return (
         <div>
             <Nav>
                 <a href="/">
-                    <Logo color={menuOpen ? 'var(--white)' : 'var(--natt)'} width="56" height="51.95" />
+                    <Logo color={'var(--natt)'} width="56" height="51.95" />
                 </a>
-                <MenuButton open={menuOpen} onClick={() => toggleMenu()}>
-                    Meny
-                </MenuButton>
+                <a href="/undersokelsen">Undersøkelsen</a>
             </Nav>
-            <Menu open={menuOpen}>
-                <NavItem href="/">Hva er kontinuerlig design?</NavItem>
-                <NavItem href="/undersokelsen">Undersøkelsen</NavItem>
-            </Menu>
         </div>
     )
 }
 
 export default Navigation
+
+/*
+
+<Menu open={menuOpen}>
+    <NavItem href="/">Hva er kontinuerlig design?</NavItem>
+    <NavItem href="/undersokelsen">Undersøkelsen</NavItem>
+</Menu>
+
+*/

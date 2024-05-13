@@ -7,7 +7,6 @@ import articleImageFour from '../images/finneBrukere.jpg'
 import articleImageFive from '../images/shouldveKnown.png'
 import articleImageSix from '../images/dataInnsikt.jpeg'
 import DotText from './DotHeading'
-import Button from './Button'
 
 const ArticleWrapper = styled.div`
     display: grid;
@@ -24,6 +23,13 @@ const Article = styled.article`
         aspect-ratio: 3 / 2;
         object-fit: cover;
         border-radius: 1%;
+        transition: filter 0.3s ease-in-out;
+    }
+
+    &:hover {
+        img {
+            filter: grayscale(100%);
+        }
     }
 
     grid-column: auto / span 4;
@@ -43,7 +49,7 @@ const Title = styled.h3`
     border-top: 1px solid var(--natt);
 `
 
-const Intro = styled.p`
+const Intro = styled.div`
     grid-column: 1 / span 4;
     @media screen and (max-width: 900px) {
         grid-column: 1 / span 6;
@@ -95,7 +101,7 @@ const articles = [
 const InsightArticles = () => {
     return (
         <>
-            <ArticleWrapper>
+            <ArticleWrapper style={{ marginBottom: '16px' }}>
                 <Intro>
                     <DotText>Artikler</DotText>
                     Innsikt og utforskning bør skje hyppig og kontinuerlig, samtidig som vi bygger.
@@ -104,9 +110,10 @@ const InsightArticles = () => {
             <ArticleWrapper>
                 {articles.map(({ img, title, link }, index) => (
                     <Article key={title} index={index}>
-                        <img src={img} alt={title} />
-                        <Title>{title}</Title>
-                        <Button href={link}>LES MER</Button>
+                        <a href={link}>
+                            <img src={img} alt={title} />
+                            <Title>{title}</Title>
+                        </a>
                     </Article>
                 ))}
             </ArticleWrapper>

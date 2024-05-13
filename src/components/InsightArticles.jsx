@@ -6,67 +6,52 @@ import articleImageThree from '../images/enGangIUka.jpg'
 import articleImageFour from '../images/finneBrukere.jpg'
 import articleImageFive from '../images/shouldveKnown.png'
 import articleImageSix from '../images/dataInnsikt.jpeg'
-import circle from '../images/circle.svg'
-import { Link } from 'react-router-dom'
+import DotText from './DotHeading'
+import Button from './Button'
 
 const ArticleWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
     grid-row-gap: 2rem;
-
-    @media screen and (min-width: 530px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (min-width: 850px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    @media screen and (min-width: 1150px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
 `
 
 const Article = styled.article`
-    height: 45vh;
     position: relative;
+    margin-bottom: 16px;
     img {
         width: 100%;
-        height: 65%;
+        aspect-ratio: 3 / 2;
         object-fit: cover;
         border-radius: 1%;
     }
-    grid-column: ${({ index }) => (index % 3 === 0 ? '2 / span 1' : 'auto / span 1')};
 
-    @media screen and (max-width: 1150px) {
-        grid-column: ${({ index }) => (index % 2 === 0 ? '2 / span 1' : 'auto / span 1')};
+    grid-column: auto / span 4;
+    @media screen and (max-width: 900px) {
+        grid-column: auto / span 6;
     }
     @media screen and (max-width: 530px) {
-        grid-column: 1 / span 1;
+        grid-column: 1 / span 12;
     }
 `
 
 const Title = styled.h3`
-    font-size: 18px;
+    font-size: 1.3rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--natt);
+    border-top: 1px solid var(--natt);
 `
 
-const CircleImage = styled.img`
-    margin-right: 0.5rem;
+const Intro = styled.p`
+    grid-column: 1 / span 4;
+    @media screen and (max-width: 900px) {
+        grid-column: 1 / span 6;
+    }
+    @media screen and (max-width: 530px) {
+        grid-column: 1 / span 12;
+    }
 `
-
-const LesMer = styled.a`
-    font-family: 'GT America Expanded';
-    font-size: 14px;
-    text-decoration: none;
-    border: 1px solid #000;
-    border-radius: 7px;
-    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-`
-
-const Intro = styled.div``
 
 const articles = [
     {
@@ -110,36 +95,16 @@ const articles = [
 const InsightArticles = () => {
     return (
         <>
-            <h2>Kontinuerlig innsiktsarbeid</h2>
             <ArticleWrapper>
                 <Intro>
-                    <Title>
-                        <CircleImage src={circle} />
-                        Artikler
-                    </Title>{' '}
-                    <br />
+                    <DotText>Artikler</DotText>
                     Innsikt og utforskning bør skje hyppig og kontinuerlig, samtidig som vi bygger.
                 </Intro>
                 {articles.map(({ img, title, link }, index) => (
                     <Article key={title} index={index}>
                         <img src={img} alt={title} />
                         <Title>{title}</Title>
-                        <LesMer href={link}>
-                            LES MER{' '}
-                            <svg
-                                width="20"
-                                height="15"
-                                viewBox="0 -3 20 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M11.0425 15.3845L12.1621 16.437L18.5811 9.99564L12.1543 3.59119L11.036 4.66473L15.7832 9.21066L1.01269 9.20167L1.01367 10.813L15.7842 10.822L11.0425 15.3845Z"
-                                    fill="currentColor"
-                                ></path>
-                            </svg>
-                        </LesMer>
+                        <Button href={link}>LES MER</Button>
                     </Article>
                 ))}
             </ArticleWrapper>

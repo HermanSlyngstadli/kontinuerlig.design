@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import lineAnimation from '../images/animation.gif'
 
 const LineAnimation = styled.img`
-    width: 100%;
+    position: relative;
+    width: 100vw;
+    left: -20px;
     @media screen and (max-width: 550px) {
         display: none;
     }

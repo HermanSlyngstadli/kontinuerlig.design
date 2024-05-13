@@ -9,11 +9,13 @@ const FooterWrapper = styled.footer`
     flex-direction: row;
     gap: 3rem;
     padding: 2rem 20px;
+    margin-top: 5rem;
     font-size: 0.75rem;
     @media screen and (max-width: 700px) {
         flex-direction: column;
         align-items: flex-start;
         justify-content: start;
+        margin-top: 3rem;
     }
 `
 

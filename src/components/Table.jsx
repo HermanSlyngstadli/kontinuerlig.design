@@ -5,7 +5,7 @@ const StyledTable = styled.table`
     margin-top: 5vh;
     margin-bottom: 10vh;
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
     color: --var(natt);
     th,
     td {
@@ -21,7 +21,7 @@ const StyledTable = styled.table`
         font-size: 16px;
     }
     @media screen and (max-width: 1000px) {
-        width: 100%;
+        width: 90%;
     }
 `
 

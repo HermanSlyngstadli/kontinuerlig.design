@@ -99,10 +99,10 @@ const List = styled.li`
     font-size: 18px;
 `
 const Quotes = styled.span`
-    font-family: 'GT America Expanded';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 4rem 0;
-    grid-column: 2 / span 5;
+    grid-column: 3 / span 6;
+    padding-left: 1rem;
     position: relative;
     color: #3c3c3c;
 
@@ -110,11 +110,11 @@ const Quotes = styled.span`
     &::after {
         content: '';
         position: absolute;
-        left: -20px;
+        left: 0;
         top: 0;
-        width: 0.3em;
+        width: 2px;
         height: 100%;
-        background-color: var(--rebell);
+        background-color: var(--natt);
     }
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(2, 1fr);
@@ -281,10 +281,10 @@ export const Questioneer = ({ children }) => {
                         </List>
                     </ul>
                 </Finding>
-                <Quotes style={{ marginBottom: '5vh' }}>«IKKE ROM I PRIO TIL Å SE FRAMOVER»</Quotes>
+                <Quotes style={{ marginBottom: '5vh' }}>«Ikke rom i prio til å se framover»</Quotes>
                 <Quotes>
-                    «FØLES SOM OM ET ANNET TEAM ALLEREDE HAR GJORT INNSIKTEN OG VI BARE MÅ TA DERES RESULTATER FOR GOD
-                    FISK»
+                    «Føles som om et annet team allerede har gjort innsikten og vi bare må ta deres resultater for god
+                    fisk»
                 </Quotes>
                 <Finding>
                     <FindingTitle>
@@ -423,8 +423,8 @@ export const Questioneer = ({ children }) => {
                     </ul>
                 </Finding>
                 <Quotes>
-                    «TEAMET MÅLER ALT FOR MANGE PARAMETRE OG HAR IKKE NOE BEVISST FORHOLD TIL HVORDAN Å BRUKE DATAEN DE
-                    SAMLER INN»
+                    «Teamet måler alt for mange parametre og har ikke noe bevisst forhold til hvordan å bruke dataen de
+                    samler inn»
                 </Quotes>
                 <Finding>
                     <Tabell data={data2} headers={headers2} />
@@ -438,8 +438,8 @@ export const Questioneer = ({ children }) => {
                 </Finding>
 
                 <Quotes>
-                    «DET ER SATT AV HVA MAN UANSETT SKAL UTVIKLE I LANG TID FREMOVER SÅ DET ER IRRELEVANT MED INNSIKT
-                    ANNET ENN MÅLINGER OG TILBAKEMELDINGER»
+                    «Det er satt av hva man uansett skal utvikle i lang tid fremover så det er irrelevant med innsikt
+                    annet enn målinger og tilbakemeldinger»
                 </Quotes>
                 <Finding>
                     <p>

@@ -7,6 +7,7 @@ import articleImageFour from '../images/finneBrukere.jpg'
 import articleImageFive from '../images/shouldveKnown.png'
 import articleImageSix from '../images/dataInnsikt.jpeg'
 import DotText from './DotHeading'
+import ButtonArrow from './ButtonArrow'
 
 const ArticleWrapper = styled.div`
     display: grid;
@@ -25,10 +26,18 @@ const Article = styled.article`
         border-radius: 1%;
         transition: filter 0.3s ease-in-out;
     }
+    svg {
+        margin-left: 0;
+        transition: margin-left 0.2s ease-in-out;
+    }
 
     &:hover {
         img {
             filter: grayscale(100%);
+        }
+
+        svg {
+            margin-left: 0.2rem;
         }
     }
 
@@ -41,10 +50,23 @@ const Article = styled.article`
     }
 `
 
+const ArticleLink = styled.a`
+    text-decoration: none;
+`
+
+const ArticleArrow = styled.span`
+    display: block;
+    margin: 0;
+    padding: 0.25rem 0;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--natt);
+`
+
 const Title = styled.h3`
     font-size: 1.3rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
     border-bottom: 1px solid var(--natt);
     border-top: 1px solid var(--natt);
 `
@@ -110,10 +132,13 @@ const InsightArticles = () => {
             <ArticleWrapper>
                 {articles.map(({ img, title, link }, index) => (
                     <Article key={title} index={index}>
-                        <a href={link}>
-                            <img src={img} alt={title} />
+                        <ArticleLink href={link}>
+                            <img src={img} alt={title} style={{ marginBottom: '0.65rem' }} />
                             <Title>{title}</Title>
-                        </a>
+                            <ArticleArrow>
+                                Les mer <ButtonArrow />
+                            </ArticleArrow>
+                        </ArticleLink>
                     </Article>
                 ))}
             </ArticleWrapper>

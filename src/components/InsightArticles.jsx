@@ -55,9 +55,12 @@ const ArticleLink = styled.a`
 `
 
 const ArticleArrow = styled.span`
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
     margin: 0;
     padding: 0.25rem 0;
+    font-size: 1rem;
     line-height: 1.2;
     border-bottom: 1px solid var(--natt);
 `
@@ -136,7 +139,7 @@ const InsightArticles = () => {
                             <img src={img} alt={title} style={{ marginBottom: '0.65rem' }} />
                             <Title>{title}</Title>
                             <ArticleArrow>
-                                Les mer <ButtonArrow />
+                                Les mer <ButtonArrow height="1.3rem" width="1.5rem" />
                             </ArticleArrow>
                         </ArticleLink>
                     </Article>

@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation'
 // import jsonData from './Text.json'
 import graf from '../../images/grafSurvey.png'
 import NavArrow from '../../components/NavArrow'
+import Tabell from '../../components/Table'
 
 const MainSection = styled.main`
     position: relative;
@@ -153,6 +154,58 @@ const BackLink = styled.a`
 `
 
 export const Questioneer = ({ children }) => {
+    const data1 = [
+        {
+            column1: 'Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang',
+            column2: '51 %',
+        },
+        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '51 %' },
+        { column1: 'Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere', column2: '38 %' },
+        { column1: 'Forarbeidet tar (for) mye tid - som rekruttering og intervjuguide', column2: '30 %' },
+        { column1: 'For vanskelig å rekruttere relevante brukere', column2: '24 %' },
+        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '24 %' },
+        {
+            column1:
+                'Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for brukerne - brukerinnsikten er allerede hentet inn',
+            column2: '24 %',
+        },
+        { column1: 'Etterarbeidet tar (for) mye tid - som analyse og dokumentasjon', column2: '22 %' },
+        { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '8 %' },
+        {
+            column1: 'Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data',
+            column2: '5 %',
+        },
+    ]
+    const headers1 = [
+        'Hva er årsaken til at dere ikke får gjort mer kvalitativt innsiktsarbeid i hverdagen?',
+        'Prosent',
+    ]
+    const data2 = [
+        {
+            column1: 'Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytcs e.l.)',
+            column2: '44 %',
+        },
+        { column1: 'Teamet mangler kompetansen til å sette opp målinger', column2: '28 %' },
+        {
+            column1: 'Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang',
+            column2: '28 %',
+        },
+        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '28 %' },
+        { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '25 %' },
+        { column1: 'Vi har ikke lansert noe, så vi har ikke tilgang til kvantitative data', column2: '22 %' },
+        {
+            column1:
+                'Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for brukerne - brukerinnsikten er allerede hentet inn',
+            column2: '8 %',
+        },
+        { column1: 'Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere', column2: '8 %' },
+        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '6 %' },
+    ]
+    const headers2 = [
+        'Hva er årsaken til at dere ikke får gjort mer kvantitativt innsiktsarbeid i hverdagen?',
+        'Prosent',
+    ]
+
     return (
         <>
             <Navigation />
@@ -202,8 +255,8 @@ export const Questioneer = ({ children }) => {
                 <Finding>
                     <FindingBigTitle>Halvparten får ikke gjort nok kvalitativ brukerinnsikt</FindingBigTitle>
                     <p>
-                        Men på den andre siden opplever også halvparten at de får gjort tilstrekkelig med kvalitativt
-                        innsiktsarbeid (hurra!).
+                        Men på den andre siden opplever også omtrent halvparten, 28 av 64, at de får gjort tilstrekkelig
+                        med kvalitativt innsiktsarbeid (hurra!).
                     </p>
                 </Finding>
                 <Finding>
@@ -283,7 +336,9 @@ export const Questioneer = ({ children }) => {
                             <Answers>2 svar av 37 mulige</Answers>
                         </List>
                     </ul>
+                    <Tabell data={data1} headers={headers1} />
                 </Finding>
+
                 <ImageElement>
                     <Graf
                         src={graf}
@@ -300,7 +355,7 @@ export const Questioneer = ({ children }) => {
                     </FindingBigTitle>{' '}
                     <p>
                         På spørsmålet om en opplever at teamet har fått gjort den brukerinnsikten en har behov for, så
-                        er tilfeldigvis antallet likt på kvalitativ og kvantitativ brukerinnsikt. Når en ser på svarene
+                        er tilfeldigvis antallet likt på kvalitativ og kvantitativ brukerinnsikt. Hvis en ser på svarene
                         så er det likevel ikke alltid de samme personene som svarer “ja” på begge. 16 av 64 svarer at de
                         får gjort det kvantitative innsiktsarbeidet de har behov for, men ikke det kvalitative.
                     </p>
@@ -372,12 +427,13 @@ export const Questioneer = ({ children }) => {
                     SAMLER INN
                 </Quotes>
                 <Finding>
+                    <Tabell data={data2} headers={headers2} />
                     <FindingBigTitle>Noen refleksjoner på slutten</FindingBigTitle> <br />
                     <p>
-                        Det er tydelig hvor forskjellige hverdager vi faktisk sitter i – der 20 % faktisk føler på at de
-                        får gjort både den kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov
-                        for. Men mange andre kjenner på utfordringer rundt dette, og årsakene er varierende fra person
-                        til person.
+                        Det er tydelig hvor forskjellige hverdager vi faktisk sitter! 20 % opplever faktisk at de får
+                        gjort både den kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for.
+                        Men mange andre kjenner på utfordringer rundt dette, og årsakene er varierende fra person til
+                        person.
                     </p>
                 </Finding>
 

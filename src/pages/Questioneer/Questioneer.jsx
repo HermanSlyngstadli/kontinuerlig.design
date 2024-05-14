@@ -281,10 +281,10 @@ export const Questioneer = ({ children }) => {
                         </List>
                     </ul>
                 </Finding>
-                <Quotes style={{ marginBottom: '5vh' }}>IKKE ROM I PRIO TIL Å SE FRAMOVER</Quotes>
+                <Quotes style={{ marginBottom: '5vh' }}>«IKKE ROM I PRIO TIL Å SE FRAMOVER»</Quotes>
                 <Quotes>
-                    FØLES SOM OM ET ANNET TEAM ALLEREDE HAR GJORT INNSIKTEN OG VI BARE MÅ TA DERES RESULTATER FOR GOD
-                    FISK.
+                    «FØLES SOM OM ET ANNET TEAM ALLEREDE HAR GJORT INNSIKTEN OG VI BARE MÅ TA DERES RESULTATER FOR GOD
+                    FISK»
                 </Quotes>
                 <Finding>
                     <FindingTitle>
@@ -423,8 +423,8 @@ export const Questioneer = ({ children }) => {
                     </ul>
                 </Finding>
                 <Quotes>
-                    TEAMET MÅLER ALT FOR MANGE PARAMETRE OG HAR IKKE NOE BEVISST FORHOLD TIL HVORDAN Å BRUKE DATAEN DE
-                    SAMLER INN
+                    «TEAMET MÅLER ALT FOR MANGE PARAMETRE OG HAR IKKE NOE BEVISST FORHOLD TIL HVORDAN Å BRUKE DATAEN DE
+                    SAMLER INN»
                 </Quotes>
                 <Finding>
                     <Tabell data={data2} headers={headers2} />
@@ -438,8 +438,8 @@ export const Questioneer = ({ children }) => {
                 </Finding>
 
                 <Quotes>
-                    DET ER SATT AV HVA MAN UANSETT SKAL UTVIKLE I LANG TID FREMOVER SÅ DET ER IRRELEVANT MED INNSIKT
-                    ANNET ENN MÅLINGER OG TILBAKEMELDINGER
+                    «DET ER SATT AV HVA MAN UANSETT SKAL UTVIKLE I LANG TID FREMOVER SÅ DET ER IRRELEVANT MED INNSIKT
+                    ANNET ENN MÅLINGER OG TILBAKEMELDINGER»
                 </Quotes>
                 <Finding>
                     <p>

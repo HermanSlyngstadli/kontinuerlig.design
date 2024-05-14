@@ -104,7 +104,8 @@ const Quotes = styled.span`
     grid-column: 3 / span 6;
     padding-left: 1rem;
     position: relative;
-    color: #3c3c3c;
+    color: var(--natt);
+    font-style: italic;
 
     /* Underline */
     &::after {
@@ -112,9 +113,9 @@ const Quotes = styled.span`
         position: absolute;
         left: 0;
         top: 0;
-        width: 2px;
+        width: 0.3rem;
         height: 100%;
-        background-color: var(--natt);
+        background-color: #cbb29c;
     }
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(2, 1fr);

@@ -458,8 +458,13 @@ export const Questioneer = ({ children }) => {
                 <Finding>
                     <FindingTitle>Hva opplever du?</FindingTitle>
                     <p>
-                        <a href="https://tally.so/r/wLdDW2">Ta spørreundersøkelsen her</a> - den er åpen i en stund
-                        fremover.
+                        <a
+                            href="https://tally.so/r/wLd1qy
+"
+                        >
+                            Ta spørreundersøkelsen her
+                        </a>{' '}
+                        - den er åpen i en stund fremover.
                     </p>
                 </Finding>
             </MainSection>

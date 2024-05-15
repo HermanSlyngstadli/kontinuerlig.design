@@ -221,26 +221,31 @@ export const Questioneer = ({ children }) => {
                     Tilbake til forsiden
                 </BackLink>
                 <Title>
-                    <TitleUnderline>Barrierer</TitleUnderline> for innsiktsarbeid
+                    <TitleUnderline>Barrierene</TitleUnderline> for innsiktsarbeid
                 </Title>
-                <Subtitle>Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi kunne ønske?</Subtitle>
+                <Subtitle>Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi ønsker?</Subtitle>
                 <Intro>
                     <p>
-                        Etter et dypdykk i dette spørsmålet har vi nå også hørt fra noen av dere i bransjen.
-                        Innsiktsarbeid trengs for å ta gode beslutninger om hva vi skal lage, hvorfor og hvordan, og
-                        aller helst fra både kvalitative og kvantitative data. Vi trenger også forståelse av domenet vi
-                        jobber innenfor - som bl.a. det juridiske, tekniske og hvordan organisasjonen fungerer. I denne
-                        undersøkelsen har vi snevret inn fokuset på kvalitativ og kvantitativ brukerinnsikt. Per 7. mai
-                        2024 har 64 svart.
+                        Det er det brennhete spørsmålet vi trenger svar på. Svar vi kan bruke som argumenter for å gjøre
+                        mer innsiktsarbeid. Svar som lar oss formidle hvordan innsiktsarbeid hjelper selskaper å ta
+                        bedre beslutninger om hva de skal lage, hvordan og, ikke minst, hvorfor. <br />
+                        Vi trenger også en bredere forståelse av domenene vi jobber i, blant annet det juridiske,
+                        tekniske og hvordan organisasjoner fungerer, men i denne spørreundersøkelsen fokuserer vi på
+                        kvalitativ og kvantitativ brukerinnsikt.
                     </p>
                     <p>
-                        Vi kan ikke si at dette er resultater som viser bransjen, derfor viser vi antallet svar per
-                        spørsmål - dette er bare en indikasjon på hva noen i bransjen opplever. Kort oppsummert:
-                        hverdagene våre ser ganske forskjellige ut, og naturlig nok kjenner vi også da på ulike årsaker
-                        til hvorfor vi ikke får gjennomført den brukerinnsikten vi har behov for! To tredjedeler av oss
-                        jobber i en organisasjon som forstår hvorfor vi jobber brukersentrert (hurra!), men dessverre er
-                        det hele en tredjedel som opplever at organisasjonen ikke forstår hvorfor vi trenger å snakke
-                        med brukere (sukk).
+                        Per 7. mai har 64 svart på undersøkelsen. Tusen takk til alle som har svart på undersøkelsen så
+                        langt 💛 Hvis du vil ta undersøkelsen setter vi stor pris på det. Undersøkelsen finner du{' '}
+                        <a href="https://tally.so/r/wLd1qy">her.</a>
+                    </p>
+                    <br />
+                    <FindingTitle>Superkort oppsummert</FindingTitle>
+                    <p>
+                        Hverdagene våre ute i de tusen produkthjem er ganske forskjellige. Det betyr et stort spenn av
+                        grunner og årsaker til hvorfor vi ikke får gjennomført brukerinnsikten vi har behov for! To
+                        tredjedeler jobber i en organisasjon som forstår hvorfor vi setter brukerens behov først
+                        (hurra!), men dessverre opplever en tredjedel at organisasjonen ikke forstår hvorfor vi trenger
+                        å snakke med brukerne (hjertesukk).
                     </p>
                 </Intro>
                 <ImageElement>
@@ -256,29 +261,29 @@ export const Questioneer = ({ children }) => {
                 <Finding>
                     <FindingBigTitle>Halvparten får ikke gjort nok kvalitativ brukerinnsikt</FindingBigTitle>
                     <p>
-                        Men på den andre siden opplever også omtrent halvparten, 28 av 64, at de får gjort tilstrekkelig
-                        med kvalitativt innsiktsarbeid (hurra!).
+                        Men den andre halvparten (28 av 64) sier de får gjort tilstrekkelig med kvalitativt
+                        innsiktsarbeid 🎉
                     </p>
                 </Finding>
                 <Finding>
                     <FindingTitle>Ganske mange er dypt nede i byggefella</FindingTitle>
                     <p>
-                        Noe av det folk trekker frem når de påpeker hvorfor de ikke får gjort nok kvalitativt
-                        innsiktsarbeid er å få prioritert det. Folk har travle hverdager, så det er mange som ikke får
-                        tid eller orker å prioritere utforskningen i hverdagen.
+                        Dårlig tid er en faktor mange trekker frem når de peker på hvorfor de ikke får gjort nok
+                        kvalitativt innsiktsarbeid. Folk har travle hverdager, så det er mange som verken har tid eller
+                        ork til å prioritere utforskning i arbeidstiden.
                     </p>
                     <ul>
                         <List>
                             Vi er opptatt med å bygge og lage ny funksjonalitet <br />
-                            <Answers>19 svar av 37 mulige</Answers>
+                            <Answers>19 svar av 36 mulige</Answers>
                         </List>
                         <List>
                             Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang{' '}
-                            <Answers>19 svar av 37 mulige</Answers>
+                            <Answers>19 svar av 36 mulige</Answers>
                         </List>
                         <List>
-                            Forarbeidet tar (for) mye tid - som rekruttering og intervjuguide{' '}
-                            <Answers>11 svar av 37 mulige</Answers>
+                            Forarbeidet tar (for) mye tid – som rekruttering og intervjuguide{' '}
+                            <Answers>11 svar av 36 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -288,9 +293,7 @@ export const Questioneer = ({ children }) => {
                     fisk»
                 </Quotes>
                 <Finding>
-                    <FindingTitle>
-                        Mange peker på at det er lederne som ikke lar en få lov til å gjøre innsiktsarbeid
-                    </FindingTitle>
+                    <FindingTitle>Lederne lar oss ikke gjøre innsiktsarbeid</FindingTitle>
                     <p>
                         Kan dette også være relatert til byggefella? At fokuset er på at vi bygger, bygger, bygger?
                         Hvordan vet vi hva vi skal bygge og hvordan uten denne utforskningen? Det kan se ut til at mange
@@ -300,27 +303,26 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere.{' '}
-                            <Answers>14 svar av 37 mulige</Answers>
+                            <Answers>14 svar av 36 mulige</Answers>
                         </List>
                         <List>
                             Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for
-                            brukerne - brukerinnsikten er allerede hentet inn. <Answers>9 svar av 37 mulige</Answers>
+                            brukerne - brukerinnsikten er allerede hentet inn. <Answers>9 svar av 36 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
                 <Finding>
                     <FindingTitle>
-                        For de fleste handler det ikke om kompetanse på kvalitativt innsiktsarbeid
+                        For de fleste handler det ikke om lav kompetanse på kvalitativt innsiktsarbeid
                     </FindingTitle>
                     <p>
-                        Hvis vi skal tenke over hva som er det reelle problemet å løse her, så kan det se ut som det
-                        ikke er å bygge kompetanse som er det viktige - det handler gjerne mer om kulturen i
-                        organisasjonen?
+                        Med andre ord er det å bygge kompetanse på innsiktsarbeid et problem vi ikke trenger å løse. Det
+                        handler heller mer om å endre kulturen i organisasjonen.
                     </p>
                     <ul>
                         <List>
                             Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det.{' '}
-                            <Answers>3 svar av 37 mulige</Answers>
+                            <Answers>3 svar av 36 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -334,7 +336,7 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data.{' '}
-                            <Answers>2 svar av 37 mulige</Answers>
+                            <Answers>2 svar av 36 mulige</Answers>
                         </List>
                     </ul>
                     <Tabell data={data1} headers={headers1} />
@@ -356,25 +358,24 @@ export const Questioneer = ({ children }) => {
                     </FindingBigTitle>{' '}
                     <p>
                         På spørsmålet om en opplever at teamet har fått gjort den brukerinnsikten en har behov for, så
-                        er tilfeldigvis antallet likt på kvalitativ og kvantitativ brukerinnsikt. Hvis en ser på svarene
-                        så er det likevel ikke alltid de samme personene som svarer “ja” på begge. 16 av 64 svarer at de
-                        får gjort det kvantitative innsiktsarbeidet de har behov for, men ikke det kvalitative.
+                        er tilfeldigvis antallet likt på kvalitativ og kvantitativ brukerinnsikt. Men hvis vi ser
+                        nærmere på svarene, er det ikke alltid de samme personene som svarer “ja” på begge. 16 av 64
+                        svarer at de får gjort det kvantitative innsiktsarbeidet de har behov for, men ikke det
+                        kvalitative.
                     </p>
                 </Finding>
                 <Finding>
-                    <FindingTitle>
-                        Også for kvantitativ brukerinnsikt oppgir mange årsaken om at en er travelt opptatt med å bygge
-                        funksjonalitet{' '}
-                    </FindingTitle>{' '}
+                    <FindingTitle>«Har ikke tid til innsiktsarbeid, jeg må bygge» </FindingTitle>{' '}
                     <p>
-                        Bygging har ikke noe verdi i seg selv, så hvordan kan vi vite om vi bygger det riktige uten å
-                        analysere i etterkant. Hvordan kan vi gjøre det lavterskel å sjekke i etterkant av byggingen for
-                        å se om det vi lager faktisk treffer på brukerbehov? Skaper den nye funksjonaliteten den
-                        effekten vi forventet?
+                        Også for kvantitativ brukerinnsikt oppgir mange at de er opptatt med å bygge funksjonalitet som
+                        årsaken til at de ikke får gjort innsiktsarbeid. Bygging har ikke noe verdi i seg selv, så
+                        hvordan kan vi vite om vi bygger det riktige uten å analysere i etterkant? Hvordan kan vi senke
+                        terskelen for å sjekke i etterkant av byggingen om det vi lager faktisk treffer brukerens behov?
+                        Skaper den nye funksjonaliteten den effekten vi forventet?
                     </p>
                     <ul>
                         <List>
-                            Vi er opptatt med å bygge og lage ny funksjonalitet.<Answers>10 svar av 37 mulige</Answers>{' '}
+                            Vi er opptatt med å bygge og lage ny funksjonalitet.<Answers>10 svar av 36 mulige</Answers>{' '}
                         </List>
                     </ul>
                 </Finding>
@@ -390,7 +391,7 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytcs e.l.).{' '}
-                            <Answers>16 svar av 37 mulige</Answers>
+                            <Answers>16 svar av 36 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -405,8 +406,8 @@ export const Questioneer = ({ children }) => {
                         (Konverteringsoptimalisering)?
                     </p>
                     <p>
-                        Det er endel av de samme folka som svarer at en selv ikke har kompetansen og at teamet ikke har
-                        kompetansen, og når det i tillegg er travelt, så kan det være vanskelig å engasjere teamet til å
+                        Det er en del av de samme folka som svarer at en selv ikke har kompetansen og at teamet ikke har
+                        kompetansen. Og når det i tillegg er travelt, så kan det være vanskelig å engasjere teamet til å
                         komme i gang.
                     </p>
                     <ul>
@@ -431,10 +432,9 @@ export const Questioneer = ({ children }) => {
                     <Tabell data={data2} headers={headers2} />
                     <FindingBigTitle>Noen refleksjoner på slutten</FindingBigTitle> <br />
                     <p>
-                        Det er tydelig hvor forskjellige hverdager vi faktisk sitter! 20 % opplever faktisk at de får
-                        gjort både den kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for.
-                        Men mange andre kjenner på utfordringer rundt dette, og årsakene er varierende fra person til
-                        person.
+                        Det er tydelig hvor forskjellige hverdager våre er! 20 % opplever at de får gjort både den
+                        kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for. Men mange andre
+                        kjenner på utfordringer rundt dette, og årsakene er varierende fra person til person.
                     </p>
                 </Finding>
 
@@ -445,13 +445,14 @@ export const Questioneer = ({ children }) => {
                 <Finding>
                     <p>
                         En person trekker frem en erfaring rundt at det var greit å gjøre innsiktsarbeid, men når det
-                        kom til stykket så ble ikke nye endringer faktisk prioritert og gjennomført. Hvis en jobber i en
-                        organisasjon der en har planlagt så langt frem hva som skal lages, så er det jo ikke særlig rom
-                        for noe utforskning eller analyse av det som er laget. Da handler det kanskje ikke så mye lenger
-                        om en får gjort brukerinnsikt eller ikke. Det handler mer om hvordan hele organisasjonen jobber
-                        etter lange planer og satte frister, uten rom for å endre planer etterhvert som man lærer.
+                        kom til stykket ble ikke nye endringer prioritert og gjennomført på bakgrunnen av det en lærte.
+                        Å jobbe i en organisasjon som har lagt planer langt frem i tid for hva som skal lages, der er
+                        det ikke særlig rom for utforskning eller analyse av det som er laget. Da handler det kanskje
+                        ikke så mye om en får gjort brukerinnsikt eller ikke, men mer om hvordan hele organisasjonen
+                        jobber etter langsiktige planer og satte frister, uten rom for å endre planer etterhvert som man
+                        lærer. <br />
                         Hvordan endrer vi da kulturen for å få til å jobbe mer smidig og med mindre risiko for å bygge
-                        feil ting? Å jobbe mer produktorientert. Hvordan klarer vi å jobbe mer med kontinuerlig læring,
+                        feil ting? Å jobbe mer produktorientert? Hvordan klarer vi å jobbe mer med kontinuerlig læring,
                         for slik å øke sannsynligheten for at vi bygger noe som brukerne faktisk har behov for?
                     </p>
                 </Finding>

@@ -138,7 +138,6 @@ const ImageElement = styled.div`
     }
 `
 const Graf = styled.img`
-    height: auto;
     width: 100%;
 `
 

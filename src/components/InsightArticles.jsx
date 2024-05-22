@@ -6,6 +6,8 @@ import articleImageThree from '../images/enGangIUka.png'
 import articleImageFour from '../images/finneBrukere.jpg'
 import articleImageFive from '../images/shouldveKnown.png'
 import articleImageSix from '../images/dataInnsikt.jpeg'
+import kontdesignimg from '../images/kontinuerligdesignarticlebg.webp'
+import innsiktsfletta from '../images/innsiktsfletta.png'
 import DotText from './DotHeading'
 import ButtonArrow from './ButtonArrow'
 
@@ -86,6 +88,12 @@ const Intro = styled.div`
 
 const articles = [
     {
+        img: innsiktsfletta,
+        title: 'Produktutforsking 101',
+        ingress: 'Hvilke intervjuer med brukere har du fått mest ut av, og hvilke har du sterkest i minnet?',
+        link: 'https://blogg.bekk.no/produktutforsking-101-prosessen-av-%C3%A5-finne-det-som-er-verdt-%C3%A5-bygge-f578975b274e',
+    },
+    {
         img: articleImageOne,
         title: 'Kraften i historiebaserte intervjuer',
         ingress: 'Hvilke intervjuer med brukere har du fått mest ut av, og hvilke har du sterkest i minnet?',
@@ -120,6 +128,12 @@ const articles = [
         title: 'Data og brukerinnsikt',
         ingress: 'Lenger tekst her',
         link: 'https://www.bekk.christmas/post/2022/15/data-og-brukerinnsikt',
+    },
+    {
+        img: kontdesignimg,
+        title: 'Kontinuerlig design',
+        ingress: 'Lenger tekst her',
+        link: 'https://blogg.bekk.no/kontinuerlig-design-5996f9786e1c',
     },
 ]
 

@@ -4,8 +4,12 @@ import lineAnimation from '../images/animation.gif'
 
 const LineAnimation = styled.img`
     position: relative;
-    width: 100vw;
-    left: -20px;
+    width: 100%;
+    left: 0;
+    @media screen and (max-width: 2100px) {
+        left: -20px;
+        width: 100vw;
+    }
     @media screen and (max-width: 550px) {
         display: none;
     }

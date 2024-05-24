@@ -139,6 +139,9 @@ const ImageElement = styled.div`
 `
 const Graf = styled.img`
     width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 `
 
 const BackLink = styled.a`

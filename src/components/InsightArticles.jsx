@@ -146,8 +146,6 @@ const InsightArticles = () => {
                     <DotText>Artikler</DotText>
                     Innsikt og utforskning bør skje hyppig og kontinuerlig, samtidig som vi bygger.
                 </Intro>
-                {/* </ArticleWrapper>
-            <ArticleWrapper> */}
                 {articles.map(({ img, title, link }, index) => (
                     <Article key={title} index={index}>
                         <ArticleLink href={link}>

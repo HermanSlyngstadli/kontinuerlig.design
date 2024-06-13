@@ -15,7 +15,7 @@ const ArticleWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 3rem;
 `
 
 const Article = styled.article`
@@ -43,9 +43,10 @@ const Article = styled.article`
         }
     }
 
-    grid-column: auto / span 6;
+    grid-column: ${(props) => (props.index % 3 === 0 ? '4 / span 3' : 'auto / span 3')};
+
     @media screen and (max-width: 900px) {
-        grid-column: auto / span 12;
+        grid-column: 1 / span 12;
     }
     @media screen and (max-width: 530px) {
         grid-column: 1 / span 12;
@@ -77,7 +78,7 @@ const Title = styled.h3`
 `
 
 const Intro = styled.div`
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
     @media screen and (max-width: 900px) {
         grid-column: 1 / span 6;
     }
@@ -145,8 +146,8 @@ const InsightArticles = () => {
                     <DotText>Artikler</DotText>
                     Innsikt og utforskning bør skje hyppig og kontinuerlig, samtidig som vi bygger.
                 </Intro>
-            </ArticleWrapper>
-            <ArticleWrapper>
+                {/* </ArticleWrapper>
+            <ArticleWrapper> */}
                 {articles.map(({ img, title, link }, index) => (
                     <Article key={title} index={index}>
                         <ArticleLink href={link}>

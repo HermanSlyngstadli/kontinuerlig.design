@@ -21,7 +21,7 @@ const StyledTable = styled.table`
         font-size: 16px;
     }
     @media screen and (max-width: 1000px) {
-        width: 90%;
+        width: 100%;
     }
 `
 

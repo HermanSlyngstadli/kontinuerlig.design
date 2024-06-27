@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation'
 import InsightArticles from '../../components/InsightArticles'
 import Survey from '../../components/Survey'
 import Animation from '../../components/Animation'
+import Event from '../../components/Event'
 
 const HeroSection = styled.div`
     height: 50vh;
@@ -62,6 +63,7 @@ export const LandingPage = ({ children }) => {
                 <Animation />
                 <Survey />
                 <InsightArticles />
+                <Event />
             </MainSection>
             <Footer />
         </>

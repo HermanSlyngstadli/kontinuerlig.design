@@ -7,6 +7,7 @@ import articleImageFour from '../images/finneBrukere.jpg'
 import articleImageFive from '../images/shouldveKnown.png'
 import articleImageSix from '../images/dataInnsikt.jpeg'
 import kontdesignimg from '../images/kontinuerligdesignarticlebg.webp'
+import forKANBANnet from '../images/forKANBANnet.png'
 import innsiktsfletta from '../images/innsiktsfletta.png'
 import DotText from './DotHeading'
 import ButtonArrow from './ButtonArrow'
@@ -61,20 +62,30 @@ const ArticleArrow = styled.span`
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    margin: 0;
+    margin-top: 0.5rem;
     padding: 0.25rem 0;
     font-size: 1rem;
     line-height: 1.2;
+    border-top: 1px solid var(--natt);
     border-bottom: 1px solid var(--natt);
 `
 
 const Title = styled.h3`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-top: 0.15rem;
     padding-bottom: 0;
     margin-bottom: 0;
-    border-bottom: 1px solid var(--natt);
     border-top: 1px solid var(--natt);
+`
+const Tag = styled.div`
+    display: inline-block;
+    font-family: 'GT America Expanded';
+    background-color: var(--rebell);
+    font-size: 0.6rem;
+    /* border: 1px solid var(--natt); */
+    border-radius: 30px;
+    margin-top: 0.35rem;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
 `
 
 const Intro = styled.div`
@@ -91,50 +102,57 @@ const articles = [
     {
         img: innsiktsfletta,
         title: 'Produktutforsking 101',
-        ingress: 'Hvilke intervjuer med brukere har du fått mest ut av, og hvilke har du sterkest i minnet?',
+        tagtxt: 'PROSESS',
         link: 'https://blogg.bekk.no/produktutforsking-101-prosessen-av-%C3%A5-finne-det-som-er-verdt-%C3%A5-bygge-f578975b274e',
     },
     {
         img: articleImageOne,
         title: 'Kraften i historiebaserte intervjuer',
-        ingress: 'Hvilke intervjuer med brukere har du fått mest ut av, og hvilke har du sterkest i minnet?',
+        tagtxt: 'KONTINUERLIG INNSIKT',
         link: 'https://blogg.bekk.no/kraften-i-historiebaserte-intervjuer-2e21c0c40748',
-    },
-    {
-        img: articleImageTwo,
-        title: 'Innsiktsøyeblikket: Gullet i kvalitativ research',
-        ingress: 'Gullet i kvalitativ research',
-        link: 'https://blogg.bekk.no/innsikts%C3%B8yeblikket-gullet-i-kvalitativ-research-84a1036abccc',
     },
     {
         img: articleImageThree,
         title: 'Minst en gang i uka',
-        ingress: 'Lenger tekst her',
+        tagtxt: 'KONTINUERLIG INNSIKT',
         link: 'https://blogg.bekk.no/minst-en-gang-i-uka-7a835f12ad1f',
     },
     {
+        img: articleImageTwo,
+        title: 'Innsiktsøyeblikket: Gullet i kvalitativ research',
+        tagtxt: 'KONTINUERLIG INNSIKT',
+        link: 'https://blogg.bekk.no/innsikts%C3%B8yeblikket-gullet-i-kvalitativ-research-84a1036abccc',
+    },
+
+    {
         img: articleImageFour,
         title: 'Vanskelig å finne brukere å snakke med? La deg inspirere av disse designerne',
-        ingress: 'Lenger tekst her',
+        tagtxt: 'KONTINUERLIG INNSIKT',
         link: 'https://blogg.bekk.no/vanskelig-%C3%A5-finne-brukere-%C3%A5-snakke-med-la-deg-inspirere-av-disse-designerne-ac6f72f7bb7a',
     },
     {
         img: articleImageFive,
         title: 'Five things we wish we knew about working as a UX designer before we started',
-        ingress: 'Lenger tekst her',
+        tagtxt: 'PROSESS',
         link: 'https://www.bekk.christmas/post/2020/2/five-things-we-wish-we-knew-about-working-as-a-ux-designer-before-we-started',
     },
     {
         img: articleImageSix,
         title: 'Data og brukerinnsikt',
-        ingress: 'Lenger tekst her',
+        tagtxt: 'KONTINUERLIG INNSIKT',
         link: 'https://www.bekk.christmas/post/2022/15/data-og-brukerinnsikt',
     },
     {
         img: kontdesignimg,
         title: 'Kontinuerlig design',
-        ingress: 'Lenger tekst her',
+        tagtxt: 'PROSESS',
         link: 'https://blogg.bekk.no/kontinuerlig-design-5996f9786e1c',
+    },
+    {
+        img: forKANBANnet,
+        title: 'En tavle til å bli forKANBANnet av',
+        tagtxt: 'PROSESS',
+        link: 'https://www.bekk.christmas/post/2023/19/forkanbannede-tavle',
     },
 ]
 
@@ -146,11 +164,12 @@ const InsightArticles = () => {
                     <DotText>Artikler</DotText>
                     Innsikt og utforskning bør skje hyppig og kontinuerlig, samtidig som vi bygger.
                 </Intro>
-                {articles.map(({ img, title, link }, index) => (
+                {articles.map(({ img, title, link, tagtxt }, index) => (
                     <Article key={title} index={index}>
                         <ArticleLink href={link}>
                             <img src={img} alt={title} style={{ marginBottom: '0.65rem' }} />
                             <Title>{title}</Title>
+                            <Tag>{tagtxt}</Tag>
                             <ArticleArrow>
                                 Les mer <ButtonArrow height="1.3rem" width="1.5rem" />
                             </ArticleArrow>

@@ -82,7 +82,6 @@ const Tag = styled.div`
     font-family: 'GT America Expanded';
     background-color: var(--rebell);
     font-size: 0.6rem;
-    /* border: 1px solid var(--natt); */
     border-radius: 30px;
     margin-top: 0.35rem;
     padding: 0.3rem 0.6rem 0.3rem 0.6rem;

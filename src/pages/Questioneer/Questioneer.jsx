@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
-// import jsonData from './Text.json'
 import graf from '../../images/grafSurvey.png'
 import NavArrow from '../../components/NavArrow'
 import Tabell from '../../components/Table'
@@ -23,7 +22,6 @@ const MainSection = styled.main`
 `
 const Finding = styled.div`
     grid-column: 4 / span 4;
-    font-size: 18px;
     margin-top: 3rem;
     @media screen and (max-width: 1000px) {
         grid-column: 1 / span 2;
@@ -31,6 +29,7 @@ const Finding = styled.div`
     }
 `
 const Title = styled.h1`
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
     grid-column: 1 / span 3;
     padding-right: 5rem;
     @media screen and (max-width: 1000px) {
@@ -39,8 +38,7 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.p`
-    margin-top: 0;
-    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+    font-size: clamp(1rem, 1rem + 1vw, 1.7rem);
     font-family: 'GT America', Arial, Helvetica, sans-serif;
     line-height: 1.4;
     font-feature-settings: 'ss01' on, 'ss05' on;
@@ -82,21 +80,21 @@ const Intro = styled.div`
     }
 `
 const FindingBigTitle = styled.p`
-    font-size: 40px;
+    font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
     margin-bottom: 1vh;
 `
 const FindingTitle = styled.p`
-    font-size: 25px;
+    font-size: clamp(1.3rem, 1rem + 1vw, 1.65rem);
 `
 const Answers = styled.p`
-    font-size: 18px;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
     opacity: 0.65;
     margin: 0;
     padding-left: -2vh;
     padding-bottom: 1vh;
 `
 const List = styled.li`
-    font-size: 18px;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 `
 const Quotes = styled.span`
     font-size: 1.3rem;
@@ -121,6 +119,22 @@ const Quotes = styled.span`
         grid-template-columns: repeat(2, 1fr);
         grid-column: 1 / span 2;
         font-size: clamp(1rem, 1rem + 1vw, 2rem);
+    }
+`
+const Divider = styled.span`
+    padding-left: 1rem;
+    margin-bottom: -5rem;
+    position: relative;
+
+    /* Underline */
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2.5rem;
+        height: 0.4rem;
+        background-color: #e1d1c1;
     }
 `
 const ImageElement = styled.div`
@@ -225,31 +239,33 @@ export const Questioneer = ({ children }) => {
                 <Title>
                     <TitleUnderline>Barrierene</TitleUnderline> for innsiktsarbeid
                 </Title>
-                <Subtitle>Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi ønsker?</Subtitle>
-                <Intro>
-                    <p>
-                        Det er det brennhete spørsmålet vi trenger svar på. Svar vi kan bruke som argumenter for å gjøre
-                        mer innsiktsarbeid. Svar som lar oss formidle hvordan innsiktsarbeid hjelper selskaper å ta
-                        bedre beslutninger om hva de skal lage, hvordan og, ikke minst, hvorfor. <br />
-                        Vi trenger også en bredere forståelse av domenene vi jobber i, blant annet det juridiske,
-                        tekniske og hvordan organisasjoner fungerer, men i denne spørreundersøkelsen fokuserer vi på
-                        kvalitativ og kvantitativ brukerinnsikt.
-                    </p>
-                    <p>
-                        Per 7. mai har 64 svart på undersøkelsen. Tusen takk til alle som har svart på undersøkelsen så
-                        langt 💛 Hvis du vil ta undersøkelsen setter vi stor pris på det. Undersøkelsen finner du{' '}
-                        <a href="https://tally.so/r/wLd1qy">her.</a>
-                    </p>
-                    <br />
-                    <FindingTitle>Superkort oppsummert</FindingTitle>
-                    <p>
-                        Hverdagene våre ute i de tusen produkthjem er ganske forskjellige. Det betyr et stort spenn av
-                        grunner og årsaker til hvorfor vi ikke får gjennomført brukerinnsikten vi har behov for! To
-                        tredjedeler jobber i en organisasjon som forstår hvorfor vi setter brukerens behov først
-                        (hurra!), men dessverre opplever en tredjedel at organisasjonen ikke forstår hvorfor vi trenger
-                        å snakke med brukerne (hjertesukk).
-                    </p>
-                </Intro>
+                <Subtitle style={{ marginTop: '0.2em' }}>
+                    Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi ønsker?
+                    <Intro>
+                        <p>
+                            Det er det brennhete spørsmålet vi trenger svar på. Svar vi kan bruke som argumenter for å
+                            gjøre mer innsiktsarbeid. Svar som lar oss formidle hvordan innsiktsarbeid hjelper selskaper
+                            å ta bedre beslutninger om hva de skal lage, hvordan og, ikke minst, hvorfor. <br />
+                            Vi trenger også en bredere forståelse av domenene vi jobber i, blant annet det juridiske,
+                            tekniske og hvordan organisasjoner fungerer, men i denne spørreundersøkelsen fokuserer vi på
+                            kvalitativ og kvantitativ brukerinnsikt.
+                        </p>
+                        <p>
+                            Per 7. mai har 64 svart på undersøkelsen. Tusen takk til alle som har svart på undersøkelsen
+                            så langt 💛 Hvis du vil ta undersøkelsen setter vi stor pris på det. Undersøkelsen finner du{' '}
+                            <a href="https://tally.so/r/wLd1qy">her.</a>
+                        </p>
+                        <br />
+                        <FindingTitle>Superkort oppsummert</FindingTitle>
+                        <p>
+                            Hverdagene våre ute i de tusen produkthjem er ganske forskjellige. Det betyr et stort spenn
+                            av grunner og årsaker til hvorfor vi ikke får gjennomført brukerinnsikten vi har behov for!
+                            To tredjedeler jobber i en organisasjon som forstår hvorfor vi setter brukerens behov først
+                            (hurra!), men dessverre opplever en tredjedel at organisasjonen ikke forstår hvorfor vi
+                            trenger å snakke med brukerne (hjertesukk).
+                        </p>
+                    </Intro>
+                </Subtitle>
                 <ImageElement>
                     <Graf
                         src={graf}
@@ -261,7 +277,10 @@ export const Questioneer = ({ children }) => {
                     </figcaption>
                 </ImageElement>
                 <Finding>
-                    <FindingBigTitle>Halvparten får ikke gjort nok kvalitativ brukerinnsikt</FindingBigTitle>
+                    <Divider></Divider>
+                    <FindingBigTitle style={{ marginTop: '0' }}>
+                        Halvparten får ikke gjort nok kvalitativ brukerinnsikt
+                    </FindingBigTitle>
                     <p>
                         Men den andre halvparten (28 av 64) sier de får gjort tilstrekkelig med kvalitativt
                         innsiktsarbeid 🎉
@@ -355,7 +374,8 @@ export const Questioneer = ({ children }) => {
                     </figcaption>
                 </ImageElement>
                 <Finding>
-                    <FindingBigTitle>
+                    <Divider></Divider>
+                    <FindingBigTitle style={{ marginTop: '0' }}>
                         Halvparten sier at de ikke får gjort nok kvantitativ brukerinnsikt
                     </FindingBigTitle>{' '}
                     <p>
@@ -432,7 +452,8 @@ export const Questioneer = ({ children }) => {
                 </Quotes>
                 <Finding>
                     <Tabell data={data2} headers={headers2} />
-                    <FindingBigTitle>Noen refleksjoner på slutten</FindingBigTitle> <br />
+                    <Divider></Divider>
+                    <FindingBigTitle style={{ marginTop: '0' }}>Noen refleksjoner på slutten</FindingBigTitle> <br />
                     <p>
                         Det er tydelig hvor forskjellige hverdager våre er! 20 % opplever at de får gjort både den
                         kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for. Men mange andre
@@ -475,39 +496,3 @@ export const Questioneer = ({ children }) => {
         </>
     )
 }
-// const SurveyLink = styled.div`
-//     display: flex;
-//     align-items: center;
-// `
-
-// const FindingLink = styled.a`
-//     margin-right: '20px';
-// `
-// export const Questioneer = () => {
-//     const { title, intro, quote, link, findings } = jsonData
-
-//     return (
-//         <>
-//             <Navigation />
-//             <MainSection>
-//                 <Title>{title}</Title>
-//                 <Intro>{intro}</Intro>
-//                 {findings.map((finding, index) => (
-//                     <Finding key={console.log({ index })}>
-//                         <FindingBigTitle>{finding.bigTitle}</FindingBigTitle>
-//                         <FindingTitle>{finding.title}</FindingTitle>
-//                         <SurveyLink>
-//                             <FindingLink href="URL_TIL_SPØRREUNDERSØKELSE">{finding.link}</FindingLink>
-//                             <p style={{ paddingLeft: '0.3rem' }}>{finding.linkContent}</p>
-//                         </SurveyLink>
-//                         <Finding>{finding.content}</Finding>
-//                         <Quotes>{finding.quote}</Quotes>
-//                     </Finding>
-//                 ))}
-//             </MainSection>
-//             <Footer />
-//         </>
-//     )
-// }
-
-// export default Questioneer

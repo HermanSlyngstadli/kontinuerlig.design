@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
 import graf from '../../images/grafSurvey.png'
+import grafKvant from '../../images/kvant-48-52.png'
 import NavArrow from '../../components/NavArrow'
 import Tabell from '../../components/Table'
 
@@ -174,23 +175,23 @@ export const Questioneer = ({ children }) => {
     const data1 = [
         {
             column1: 'Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang',
-            column2: '51 %',
+            column2: '49 %',
         },
-        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '51 %' },
+        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '44 %' },
         { column1: 'Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere', column2: '38 %' },
-        { column1: 'Forarbeidet tar (for) mye tid - som rekruttering og intervjuguide', column2: '30 %' },
-        { column1: 'For vanskelig å rekruttere relevante brukere', column2: '24 %' },
-        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '24 %' },
+        { column1: 'Forarbeidet tar (for) mye tid - som rekruttering og intervjuguide', column2: '28 %' },
+        { column1: 'For vanskelig å rekruttere relevante brukere', column2: '26 %' },
+        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '23 %' },
         {
             column1:
                 'Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for brukerne - brukerinnsikten er allerede hentet inn',
-            column2: '24 %',
+            column2: '18 %',
         },
-        { column1: 'Etterarbeidet tar (for) mye tid - som analyse og dokumentasjon', column2: '22 %' },
+        { column1: 'Etterarbeidet tar (for) mye tid - som analyse og dokumentasjon', column2: '18 %' },
         { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '8 %' },
         {
             column1: 'Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data',
-            column2: '5 %',
+            column2: '10 %',
         },
     ]
     const headers1 = [
@@ -200,23 +201,23 @@ export const Questioneer = ({ children }) => {
     const data2 = [
         {
             column1: 'Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytcs e.l.)',
-            column2: '44 %',
+            column2: '38 %',
         },
-        { column1: 'Teamet mangler kompetansen til å sette opp målinger', column2: '28 %' },
+        { column1: 'Teamet mangler kompetansen til å sette opp målinger', column2: '29 %' },
         {
             column1: 'Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang',
-            column2: '28 %',
+            column2: '27 %',
         },
-        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '28 %' },
-        { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '25 %' },
-        { column1: 'Vi har ikke lansert noe, så vi har ikke tilgang til kvantitative data', column2: '22 %' },
+        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '29 %' },
+        { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '22 %' },
+        { column1: 'Vi har ikke lansert noe, så vi har ikke tilgang til kvantitative data', column2: '20 %' },
         {
             column1:
                 'Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for brukerne - brukerinnsikten er allerede hentet inn',
-            column2: '8 %',
+            column2: '9 %',
         },
-        { column1: 'Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere', column2: '8 %' },
-        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '6 %' },
+        { column1: 'Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere', column2: '9 %' },
+        { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '5 %' },
     ]
     const headers2 = [
         'Hva er årsaken til at dere ikke får gjort mer kvantitativt innsiktsarbeid i hverdagen?',
@@ -238,6 +239,8 @@ export const Questioneer = ({ children }) => {
                 </BackLink>
                 <Title>
                     <TitleUnderline>Barrierene</TitleUnderline> for innsiktsarbeid
+                    <br />
+                    <span style={{ fontSize: '0.75rem' }}>Sist oppdatert: 16.07.2024</span>
                 </Title>
                 <Subtitle style={{ marginTop: '0.2em' }}>
                     Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi ønsker?
@@ -250,11 +253,7 @@ export const Questioneer = ({ children }) => {
                             tekniske og hvordan organisasjoner fungerer, men i denne spørreundersøkelsen fokuserer vi på
                             kvalitativ og kvantitativ brukerinnsikt.
                         </p>
-                        <p>
-                            Per 7. mai har 64 svart på undersøkelsen. Tusen takk til alle som har svart på undersøkelsen
-                            så langt 💛 Hvis du vil ta undersøkelsen setter vi stor pris på det. Undersøkelsen finner du{' '}
-                            <a href="https://tally.so/r/wLd1qy">her.</a>
-                        </p>
+                        <p>109 svarte på undersøkelsen mellom april og juni 2024. Tusen takk til alle som har svart!</p>
                         <br />
                         <FindingTitle>Superkort oppsummert</FindingTitle>
                         <p>
@@ -269,10 +268,10 @@ export const Questioneer = ({ children }) => {
                 <ImageElement>
                     <Graf
                         src={graf}
-                        alt="Det siste halvåret - har dere gjort den kvalitative brukerinnsikten du opplever at teamet har behov for? 44 % svarer ja, 56 % svarer nei."
+                        alt="Det siste halvåret - har dere gjort den kvalitative brukerinnsikten du opplever at teamet har behov for? 45 % svarer ja, 55 % svarer nei."
                     />
                     <figcaption style={{ fontSize: '14px' }}>
-                        44 % svarer ja, og 56 % svarer nei på om de har gjort den kvalitatitve brukerinnsikten de
+                        45 % svarer ja, og 55 % svarer nei på om de har gjort den kvalitatitve brukerinnsikten de
                         opplever at teamet har behov for det siste halvåret.
                     </figcaption>
                 </ImageElement>
@@ -281,10 +280,7 @@ export const Questioneer = ({ children }) => {
                     <FindingBigTitle style={{ marginTop: '0' }}>
                         Halvparten får ikke gjort nok kvalitativ brukerinnsikt
                     </FindingBigTitle>
-                    <p>
-                        Men den andre halvparten (28 av 64) sier de får gjort tilstrekkelig med kvalitativt
-                        innsiktsarbeid 🎉
-                    </p>
+                    <p>Men den andre halvparten sier de får gjort tilstrekkelig med kvalitativt innsiktsarbeid 🎉</p>
                 </Finding>
                 <Finding>
                     <FindingTitle>Ganske mange er dypt nede i byggefella</FindingTitle>
@@ -296,15 +292,15 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Vi er opptatt med å bygge og lage ny funksjonalitet <br />
-                            <Answers>19 svar av 36 mulige</Answers>
+                            <Answers>30 svar av 61 mulige</Answers>
                         </List>
                         <List>
                             Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang{' '}
-                            <Answers>19 svar av 36 mulige</Answers>
+                            <Answers>27 svar av 61 mulige</Answers>
                         </List>
                         <List>
                             Forarbeidet tar (for) mye tid – som rekruttering og intervjuguide{' '}
-                            <Answers>11 svar av 36 mulige</Answers>
+                            <Answers>17 svar av 61 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -324,11 +320,11 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Leder ønsker ikke å prioritere det fordi andre oppgaver er viktigere.{' '}
-                            <Answers>14 svar av 36 mulige</Answers>
+                            <Answers>23 svar av 61 mulige</Answers>
                         </List>
                         <List>
                             Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for
-                            brukerne - brukerinnsikten er allerede hentet inn. <Answers>9 svar av 36 mulige</Answers>
+                            brukerne - brukerinnsikten er allerede hentet inn. <Answers>14 svar av 61 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -343,7 +339,7 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det.{' '}
-                            <Answers>3 svar av 36 mulige</Answers>
+                            <Answers>5 svar av 61 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -357,7 +353,7 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data.{' '}
-                            <Answers>2 svar av 36 mulige</Answers>
+                            <Answers>6 svar av 61 mulige</Answers>
                         </List>
                     </ul>
                     <Tabell data={data1} headers={headers1} />
@@ -365,11 +361,11 @@ export const Questioneer = ({ children }) => {
 
                 <ImageElement>
                     <Graf
-                        src={graf}
-                        alt="Det siste halvåret - har dere gjort den kvantitative brukerinnsikten du opplever at teamet har behov for? 44 % svarer ja, 56 % svarer nei."
+                        src={grafKvant}
+                        alt="Det siste halvåret - har dere gjort den kvantitative brukerinnsikten du opplever at teamet har behov for? 52 % svarer ja, 48 % svarer nei."
                     />
                     <figcaption style={{ fontSize: '14px' }}>
-                        44 % svarer ja, og 56 % svarer nei på om de har gjort den kvantitative brukerinnsikten de
+                        52 % svarer ja, og 48 % svarer nei på om de har gjort den kvantitative brukerinnsikten de
                         opplever at teamet har behov for det siste halvåret.
                     </figcaption>
                 </ImageElement>
@@ -379,11 +375,13 @@ export const Questioneer = ({ children }) => {
                         Halvparten sier at de ikke får gjort nok kvantitativ brukerinnsikt
                     </FindingBigTitle>{' '}
                     <p>
-                        På spørsmålet om en opplever at teamet har fått gjort den brukerinnsikten en har behov for, så
-                        er tilfeldigvis antallet likt på kvalitativ og kvantitativ brukerinnsikt. Men hvis vi ser
-                        nærmere på svarene, er det ikke alltid de samme personene som svarer “ja” på begge. 16 av 64
-                        svarer at de får gjort det kvantitative innsiktsarbeidet de har behov for, men ikke det
-                        kvalitative.
+                        Litt mer enn halvparten sier de får gjort tilstrekkelig med kvantitativt innsiktsarbeid. Det er
+                        ganske likt mellom spørsmålet om kvalitativ og kvantitativ brukerinnsikt. Men hvis vi ser
+                        nærmere på svarene, er det ikke alltid de samme personene som svarer “ja” på begge.
+                    </p>
+                    <p>
+                        25 % svarer at de får gjort det kvantitative innsiktsarbeidet de har behov for, men ikke det
+                        kvalitative (28 av 109).
                     </p>
                 </Finding>
                 <Finding>
@@ -397,7 +395,7 @@ export const Questioneer = ({ children }) => {
                     </p>
                     <ul>
                         <List>
-                            Vi er opptatt med å bygge og lage ny funksjonalitet.<Answers>10 svar av 36 mulige</Answers>{' '}
+                            Vi er opptatt med å bygge og lage ny funksjonalitet.<Answers>16 svar av 55 mulige</Answers>{' '}
                         </List>
                     </ul>
                 </Finding>
@@ -412,8 +410,8 @@ export const Questioneer = ({ children }) => {
                     </p>
                     <ul>
                         <List>
-                            Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytcs e.l.).{' '}
-                            <Answers>16 svar av 36 mulige</Answers>
+                            Har ikke tilgang på analyseverktøy i teamet (f.eks. Amplitude, Google analytics e.l.).{' '}
+                            <Answers>21 svar av 55 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -435,14 +433,14 @@ export const Questioneer = ({ children }) => {
                     <ul>
                         <List>
                             Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det.{' '}
-                            <Answers>9 svar av 36 mulige</Answers>
+                            <Answers>12 svar av 55 mulige</Answers>
                         </List>
                         <List>
-                            Teamet mangler kompetansen til å sette opp målinger. <Answers>10 svar av 36 mulige</Answers>{' '}
+                            Teamet mangler kompetansen til å sette opp målinger. <Answers>12 svar av 55 mulige</Answers>{' '}
                         </List>
                         <List>
                             Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang.{' '}
-                            <Answers>10 svar av 36 mulige</Answers>
+                            <Answers>15 svar av 55 mulige</Answers>
                         </List>
                     </ul>
                 </Finding>
@@ -455,7 +453,7 @@ export const Questioneer = ({ children }) => {
                     <Divider></Divider>
                     <FindingBigTitle style={{ marginTop: '0' }}>Noen refleksjoner på slutten</FindingBigTitle> <br />
                     <p>
-                        Det er tydelig hvor forskjellige hverdager våre er! 20 % opplever at de får gjort både den
+                        Det er tydelig hvor forskjellige hverdager våre er! 28 % opplever at de får gjort både den
                         kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for. Men mange andre
                         kjenner på utfordringer rundt dette, og årsakene er varierende fra person til person.
                     </p>

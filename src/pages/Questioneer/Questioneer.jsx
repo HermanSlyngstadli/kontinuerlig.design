@@ -249,7 +249,7 @@ export const Questioneer = ({ children }) => {
                 <Title>
                     <TitleUnderline>Barrierene</TitleUnderline> for innsiktsarbeid
                     <br />
-                    <span style={{ fontSize: '0.75rem' }}>Sist oppdatert: 16.07.2024</span>
+                    <span style={{ fontSize: '0.75rem' }}>Sist oppdatert: 30.07.2024</span>
                 </Title>
                 <Subtitle style={{ marginTop: '0.2em' }}>
                     Hvorfor gjør vi ikke innsiktsarbeid så ofte som vi ønsker?

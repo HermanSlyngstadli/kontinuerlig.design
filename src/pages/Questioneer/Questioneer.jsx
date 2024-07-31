@@ -462,7 +462,7 @@ export const Questioneer = ({ children }) => {
                     <Divider></Divider>
                     <FindingBigTitle style={{ marginTop: '0' }}>Noen refleksjoner på slutten</FindingBigTitle> <br />
                     <p>
-                        Det er tydelig hvor forskjellige hverdager våre er! 28 % opplever at de får gjort både den
+                        Det er tydelig hvor forskjellige hverdagene våre er! 28 % opplever at de får gjort både den
                         kvalitative og kvantitative brukerinnsikten de opplever at teamet har behov for. Men mange andre
                         kjenner på utfordringer rundt dette, og årsakene er varierende fra person til person.
                     </p>

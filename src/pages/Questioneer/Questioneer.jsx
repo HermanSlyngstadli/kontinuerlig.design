@@ -173,6 +173,7 @@ const BackLink = styled.a`
 
 export const Questioneer = ({ children }) => {
     const data1 = [
+        { column1: 'Vi er opptatt med å bygge og lage ny funksjonalitet', column2: '49 %' },
         {
             column1: 'Det er travelt og det er tungt å engasjere seg selv og teamet til å sette i gang',
             column2: '44 %',
@@ -183,7 +184,7 @@ export const Questioneer = ({ children }) => {
         {
             column1:
                 'Leder ønsker ikke å prioritere det fordi organisasjonen allerede har mye forståelse for brukerne - brukerinnsikten er allerede hentet inn',
-            column2: '18 %',
+            column2: '23 %',
         },
         { column1: 'De andre i teamet ønsker ikke å prioritere det', column2: '18 %' },
         { column1: 'Etterarbeidet tar (for) mye tid - som analyse og dokumentasjon', column2: '18 %' },
@@ -191,6 +192,7 @@ export const Questioneer = ({ children }) => {
             column1: 'Juridiske barrierer: vurdering av personvern i rekruttering og innsamling av data',
             column2: '10 %',
         },
+        { column1: 'Jeg kan det ikke godt nok og føler meg ikke trygg på å gjennomføre det', column2: '8 %' },
     ]
     const headers1 = [
         'Hva er årsaken til at dere ikke får gjort mer kvalitativt innsiktsarbeid i hverdagen?',
@@ -463,28 +465,19 @@ export const Questioneer = ({ children }) => {
                 </Quotes>
                 <Finding>
                     <p>
-                        En person trekker frem en erfaring rundt at det var greit å gjøre innsiktsarbeid, men når det
-                        kom til stykket ble ikke nye endringer prioritert og gjennomført på bakgrunnen av det en lærte.
-                        Å jobbe i en organisasjon som har lagt planer langt frem i tid for hva som skal lages, der er
-                        det ikke særlig rom for utforskning eller analyse av det som er laget. Da handler det kanskje
-                        ikke så mye om en får gjort brukerinnsikt eller ikke, men mer om hvordan hele organisasjonen
-                        jobber etter langsiktige planer og satte frister, uten rom for å endre planer etterhvert som man
-                        lærer. <br />
-                        Hvordan endrer vi da kulturen for å få til å jobbe mer smidig og med mindre risiko for å bygge
-                        feil ting? Å jobbe mer produktorientert? Hvordan klarer vi å jobbe mer med kontinuerlig læring,
-                        for slik å øke sannsynligheten for at vi bygger noe som brukerne faktisk har behov for?
+                        En person trekker frem at det var greit for deres team å gjøre innsiktsarbeid, men når det kom
+                        til stykket ble ikke nye endringer prioritert og gjennomført på bakgrunnen av det en lærte. Noen
+                        organisasjoner legger langsiktige planer og da er det ikke alltid rom for utforskning eller
+                        analyse av det som allerede er ute i produksjon. I slike situasjoner handler det kanskje ikke så
+                        mye om man får gjort brukerinnsikt eller ikke, men mer om hvordan hele organisasjonen jobber
+                        etter langsiktige planer og satte frister – uten rom for å endre planer etterhvert som man
+                        lærer.
                     </p>
-                </Finding>
-                <Finding>
-                    <FindingTitle>Hva opplever du?</FindingTitle>
                     <p>
-                        <a
-                            href="https://tally.so/r/wLd1qy
-"
-                        >
-                            Ta spørreundersøkelsen her
-                        </a>{' '}
-                        - den er åpen i en stund fremover.
+                        Det vi da bør spørre oss selv er hvordan vi – i de rollene vi har – kan bidra til å endre
+                        kulturen for å få til å jobbe mer smidig og senke risikoen for å bygge feil ting. Hvordan kan vi
+                        jobbe mer produktorientert? Hvordan kan vi jobbe mer kontinuerlig læring for å øke
+                        sannsynligheten for at vi bygger noe som brukerne faktisk har behov for?
                     </p>
                 </Finding>
             </MainSection>

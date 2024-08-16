@@ -476,8 +476,8 @@ export const Questioneer = ({ children }) => {
                     <p>
                         Det vi da bør spørre oss selv er hvordan vi – i de rollene vi har – kan bidra til å endre
                         kulturen for å få til å jobbe mer smidig og senke risikoen for å bygge feil ting. Hvordan kan vi
-                        jobbe mer produktorientert? Hvordan kan vi jobbe mer kontinuerlig læring for å øke
-                        sannsynligheten for at vi bygger noe som brukerne faktisk har behov for?
+                        jobbe for å få til kontinuerlig læring i hverdagen? Slik at vi øker sannsynligheten for at vi
+                        bygger noe som brukerne faktisk har behov for.
                     </p>
                 </Finding>
             </MainSection>
